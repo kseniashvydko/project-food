@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progressive food</title>
+    <link rel="stylesheet" href="/project-food/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+            <div class="header__top">
+                <img class="header__top-img" src="/project-food/project-food/header/top-vector.svg" alt="">
+                <p class="header__top-text">Скидка 20% на первый заказ</p>
+            </div>
+
+            <div class="container">
+                <div class="header__inner">
+                    <div class="heade__inner-logo">
+                        <img class="header__logo-img" src="/project-food/project-food/header/logo.svg" alt="">
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="#description-id">Подбор рациона</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#program-id">Программы питания</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#service-id">О нас</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#delivery-id">Доставка</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#faq-id">FAQ</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#reviews-id">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__inner-tel">
+                        +7 988 500-1-700
+                    </div>
+                </div>
+
+                <div class="header__content">
+                    <div class="header__content-inner">
+                        <h1 class="header__content-title">
+                            Доставка прогрессивного питания для гурманов
+                        </h1>
+                        <div class="header__content-buttons ">
+                            <button class="header__content-btn header__content-btn-choose"><a href="#program-id">Подобрать питание</a></button>
+                            <button class="header__content-btn header__content-btn-consultation open-modal-btn">Получить консультацию</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="modal" id="my-modal">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                            fill="#333333" />
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                </button>
+                <div class="modal__form">
+                    <div class="modal__text">
+                        <h2 class="modal__text-title">Консультация</h2>
+                        <p class="modal__text-p">Предложим подходящую программу, ответим на все ваши вопросы.</p>
+                    </div>
+                    <div class="modal__inputs" action="#" novalidate>
+                        
+                        <input class="modal__input modal-tel" id="tel" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                        
+                    </div>
+                    <button class="modal__btn"><a class="modal__btn-link" href="#">Отправить</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-two" id="my-modal-two">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn-two">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                            fill="#333333" />
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                </button>
+                <div class="modal__form">
+                    <div class="modal__text">
+                        <h2 class="modal__text-title">Оформление заказа</h2>
+                        <p class="modal__text-p">После отправки формы мы свяжемся с вами для уточнения всех деталей</p>
+                    </div>
+                    <div class="modal__inputs" action="#" novalidate>
+                        <input class="modal__input" id="modal-name" type="text" name="name" placeholder="Ваше имя">
+                        <input class="modal__input" id="modal-adress" type="text" name="adress" placeholder="Адрес доставки">
+                        <input class="modal__input modal-tel" id="tel" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                    </div>
+                    <button class="modal__btn"><a class="modal__btn-link" href="#">Отправить заказ</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-tel" id="my-modal-tel">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn-tel">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                            fill="#333333" />
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                </button>
+                <div class="modal__form">
+                    <div class="modal__text">
+                        <h2 class="modal__text-title">Заказ обратного звонка</h2>
+                        <p class="modal__text-p">Введите номер телефона, на который необходимо перезвонить</p>
+                    </div>
+                    <div class="modal__inputs" action="#" novalidate>
+                        <input class="modal__input modal-tel" id="tel" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                    </div>
+                    <button class="modal__btn"><a class="modal__btn-link" href="#">Перезвоните мне</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-check" id="my-modal-check">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn-check">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                            fill="#333333" />
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                </button>
+                <div class="modal__form">
+                    <div class="modal__img">
+                        <img class="modal__img-check" src="/project-food/project-food/main-about/check-img.svg">
+                    </div>
+                    <p class="modal__form-check">Спасибо, ваш запрос отправлен</p>
+                 
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal modal-subscribe" id="my-modal-subscribe">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn-subscribe">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                            fill="#333333" />
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                    </svg>
+                </button>
+                <div class="modal__form">
+                    <div class="modal__img">
+                        <img class="modal__img-check" src="/project-food/project-food/main-about/check-img.svg">
+                    </div>
+                    <p class="modal__form-check">Спасибо, ваша подписка оформлена</p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <section class="description" id="description-id">
+            <div class="container">
+                <div class="description__blocks">
+                    <div class="description__block">
+                        <img class="description__block-img" src="/project-food/project-food/main/img1.svg" alt="">
+                        <div class="description__block-items">
+                            <div class="description__block-title">Еда, которая сделает тебя лучше!</div>
+                            <p class="description__block-text">Мы помогаем создавать новое качество жизни для наших клиентов, чтоб каждый человек был счастливым, здоровым и не отвлекался на рутинные процессы.</p>
+                            <p class="description__block-text">Для этого мы создали новый уникальный продукт на рынке доставки еды и приглашаем вас окунуться в гастрономический шик уже сегодня.</p>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <div class="description__block-items">
+                            <div class="description__block-title">Изысканное меню высокой кухни</div>
+                            <p class="description__block-text">В наших блюдах мы продумали каждую деталь, все ингредиенты тщательно подобраны и создают неповторимый вкус.</p>
+                            <p class="description__block-text">Качественные продукты, деликатесы и суперфуды, которые помогают  поддерживать здоровье и обмен веществ. Мы используем крафтовые ингредиенты: с любовью выращиваем микрозелень, делаем соусы и масла, маринуем мясо, рыбу и морепродукты.</p>
+                        </div>
+                        <img class="description__block-img" src="/project-food/project-food/main/img2.svg" alt="">
+                    </div>
+                </div>
+                <div class="description__form">
+                    <h2 class="description__form-title">
+                        Подберите рацион для своих целей
+                    </h2>
+                    <p>Выберите пол</p>
+                    <div class="description__form-items">
+                        <div class="description__form-item" id="gender">
+                            <button class="description__form-gender gender-active" id="female"  >Женский пол</button>
+                            <button class="description__form-gender gender-active" id="male"  >Мужской пол</button>
+                        </div>
+                        <label class="description__form-label" for="weight">
+                            <input class="description__form-weight" id="weight" type="number" placeholder="Ваш вес" value="" autocomplete="weight">
+                        </label>
+                        <label class="description__form-label" for="height">
+                            <input class="description__form-height" id="height" type="number" placeholder="Ваш рост" value="" autocomplete=”height”>
+                        </label>
+                        <label class="description__form-label" for="age">
+                            <input class="description__form-age" id="age" type="number" placeholder="Ваш возраст" value="" autocomplete=”age”>
+                        </label>
+                    </div>
+                    <p class="description__form-text">Выберите активность</p>
+                    <div class="description__form-choose" id="choose">
+                        <button class="description__form-activity activity-active" data-ratio="1.2" id="low-activity" class="description__option">Низкая активность</button>
+                        <button class="description__form-activity activity-active" data-ratio="1.5" id="low">Невысокая активность</button>
+                        <button class="description__form-activity activity-active" data-ratio="1.6" id="low-act">Умеренная активность</button>
+                        <button class="description__form-activity activity-active" data-ratio="1.8" id="low-act">Высокая активность</button>
+                    </div>
+                    
+                    <p>Ваша суточная норма калорий</p>
+                    <div class="description__form-res-btn">
+                        <span class="description__form-res"></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="program" id="program-id">
+            <div class="container">
+                <div class="program__inner">
+                    <div class="program__top">
+                        <h2 class="program__top-title">
+                           Программа ПремиумБоул
+                        </h2>
+                        <div class="program__top-more">
+                            <img class="program__top-more-img" src="/project-food/project-food/main/program_icon.svg" alt="">
+                            <p class="program__top-more-text">Каждый день новое меню</p>
+                        </div>
+                    </div>
+                    <div class="program__calorie">
+                        <div class="program__calorie-title">
+                            Калорийность
+                        </div>
+                        <div class="program__calorie-items" id="calorie">
+                            <button class="program__calorie-item program__calorie-active">
+                                <span class="program__calorie-item-text">900 ккал</span>
+                                <span class="program__calorie-item-dish">3 блюда</span>
+                            </button>
+                            <button class="program__calorie-item program__calorie-active">
+                                <span class="program__calorie-item-text">1 250 ккал </span>
+                                <span class="program__calorie-item-dish">4 блюда</span>
+                            </button>
+                            <button class="program__calorie-item program__calorie-active">
+                                <span class="program__calorie-item-text">1 600 ккал</span>
+                                <span class="program__calorie-item-dish">5 блюд</span>
+                            </button>
+                            <button class="program__calorie-item program__calorie-active">
+                                <span class="program__calorie-item-text">2 050 ккал</span>
+                                <span class="program__calorie-item-dish">6 блюд</span>
+                            </button>
+                            <button class="program__calorie-item program__calorie-active">
+                                <span class="program__calorie-item-text">индивидуально подобрать</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="program__period">
+                        <div class="program__period-title">
+                            Продолжительность
+                        </div>
+                        <div class="program__period-items" id="period">
+                            <button class="program__period-item period__active">
+                                <span class="program__period-item-text">Пробные 2 дня</span>
+                                <span class="program__period-item-dish">за 2 900 ₽</span>
+                            </button>
+                            <button class="program__period-item period__active">
+                                <span class="program__period-item-text">1 неделя</span>
+                                <span class="program__period-item-dish">1 700 ₽ в день</span>
+                            </button>
+                            <button class="program__period-item period__active">
+                                <span class="program__period-item-text">2 недели</span>
+                                <span class="program__period-item-dish">1 600 ₽ в день</span>
+                            </button>
+                            <button class="program__period-item period__active">
+                                <span class="program__period-item-text">3 недели</span>
+                                <span class="program__period-item-dish">1 520 ₽ в день</span>
+                            </button>
+                            <button class="program__period-item period__active">
+                                <span class="program__period-item-text">4 недели</span>
+                                <span class="program__period-item-dish">1 450 ₽  в день</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="program__days">
+                        <p class="program__days-text">Выберите, сколько дней в неделю вы хотите питаться</p>
+                        <div class="program__days-buttons" id='program-days'>
+                            <button class="program__days-btn program-days-active">
+                                5
+                            </button>
+                            <button class="program__days-btn program-days-active">
+                                6
+                            </button>
+                            <button class="program__days-btn program-days-active">
+                                7
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="example">
+                        <div class="example__title">
+                            Пример дневного рациона
+                        </div>
+                        <p class="example-text">
+                            6 блюд. Калорийность — 1 235 ккал. Белки — 103 г; жиры — 37 г; углеводы — 120 г
+                        </p>
+                        <div class="example__buttons" id="example">
+                            <button class="example__btn example-active">понедельник</button>
+                            <button class="example__btn example-active">вторник</button>
+                            <button class="example__btn example-active">четверг</button>
+                            <button class="example__btn example-active">среда</button>
+                            <button class="example__btn example-active">пятница</button>
+                            <button class="example__btn example-active">суббота</button>
+                            <button class="example__btn example-active">воскресенье</button>
+                        </div>
+
+                        <div class="example__items">
+                            <div class="example__item">
+                                <img class="example__item-img" src="/project-food/project-food/main/breakfast.png" alt="">
+                                <div class="example__item-eating">
+                                    <p class="example__item-eating-time">Завтрак</p>
+                                    <p class="example__item-eating-gr">230/250 гр</p>
+                                </div>
+                                <p class="example__item-about">Утренний боул с перепелиным яйцом, киноа и лососем</p>
+                            </div>
+                            <div class="example__item">
+                                <img class="example__item-img" src="/project-food/project-food/main/lunch.png" alt="">
+                                <div class="example__item-eating">
+                                    <p class="example__item-eating-time">Обед</p>
+                                    <p class="example__item-eating-gr">320/30 гр</p>
+                                </div>
+                                <p class="example__item-about">Боул с куриными фрикадельками в кунжуте, брокколи и миндальным соусом</p>
+                            </div>
+                            <div class="example__item">
+                                <img class="example__item-img" src="/project-food/project-food/main/snack.png" alt="">
+                                <div class="example__item-eating">
+                                    <p class="example__item-eating-time">Полдник</p>
+                                    <p class="example__item-eating-gr">50/30 гр</p>
+                                </div>
+                                <p class="example__item-about">Кукурузные блинчики с кокосовым припеком и фруктовым тар-таром</p>
+                            </div>
+                            <div class="example__item">
+                                <img class="example__item-img" src="/project-food/project-food/main/dinner.png" alt="">
+                                <div class="example__item-eating">
+                                    <p class="example__item-eating-time">Ужин</p>
+                                    <p class="example__item-eating-gr">100/100 гр</p>
+                                </div>
+                                <p class="example__item-about">Морепродукты в соусе Гарсия со стручковой фасолью</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="program__offer">
+                            <div class="program__offer-items">
+                                <div class="program__offer-item">
+                                    <button class="program__offer-btn open-modal-btn-two">
+                                        Заказать 10 дней питания за 16 000 ₽
+                                    </button>
+                                    <p class="program__offer-text">1 250 ккал за 1 600 ₽ в день</p>
+                                </div>
+                                <img class="program__offer-img" src="/project-food/project-food/main/icon-example.svg" alt="">
+                                <div class="program__offer-item">
+                                    
+                                    <div class="program__offer-texts">
+                                        <p class="program__offer-title">Будем доставлять наборы каждый день.</p>
+                                        <p class="program__offer-about">Доставка осуществляется каждый день с 06:00 до 12:00. Выбор интервала — 2 часа.
+                                            Заявки принимаются не позднее, чем за день до предполагаемой доставки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="service" id="service-id">
+            <div class="container">
+                <h2 class="service__title">
+                    О нашем сервисе
+                </h2>
+                <div class="service__items">
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon1.svg" alt="">
+                        <p class="service__item-title">Мы используем деликатные технологии приготовления блюд</p>
+                        <p class="service__item-text">Сухой гриль без прямого контакта продукта
+                            с жарочной поверхностью, запекание, су-вид</p>
+                    </div>
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon2.svg" alt="">
+                        <p class="service__item-title">Меню из 90 блюд на две недели 
+                            без повтора</p>
+                        <p class="service__item-text">Сбалансированные блюда, содержащие в себе все необходимые элементы за счёт большого количества компонентов</p>
+                    </div>
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon3.svg" alt="">
+                        <p class="service__item-title">Здоровые рецепты</p>
+                        <p class="service__item-text">Без молочки, белой муки, сахара, консервантов, усилителей вкуса и глубокой прожарки. А также мы испольузем сыродавленные масла собственного производства</p>
+                    </div>
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon4.svg" alt="">
+                        <p class="service__item-title">Гарантия возврата</p>
+                        <p class="service__item-text">100%-ная гарантия возврата денежных средств за предоплаченные дни, если что-то не понравилось в течение первой недели</p>
+                    </div>
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon5.svg" alt="">
+                        <p class="service__item-title">Контроль температуры</p>
+                        <p class="service__item-text">Все курьеры оснащены сумками-холодильниками, что позволяет сохранять температурный режим от 2°C до 4°C от кухни до ваших рук</p>
+                    </div>
+                    <div class="service__item">
+                        <img class="service__item-img" src="/project-food/project-food/main-about/icon6.svg" alt="">
+                        <p class="service__item-title">Забота о природе</p>
+                        <p class="service__item-text">Все блюда доставляем в экоупаковке из крафтового картона со столовыми приборами  из кукурузного крахмала</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bowl" id="bowl-id">
+            <div class="container">
+                <div class="bowl__inner">
+                <div class="bowl__items">
+                    <p class="bowl__title">Попробуйте новый формат рационов — Боулы! Это богатый набор полезных веществ и масса вкусовых впечатлений!</p>
+                    <div class="bowl__texts">
+                        <p class="bowl__text">Боулы — это сбалансированный вариант блюда, содержащего в себе все необходимые элементы за счёт большого количества компонентов. Ингредиенты блюда не смешиваются между собой, а не спеша поедаются по отдельности.</p>
+                        <p class="bowl__text">Мы готовим полноценное здоровое питание на день и ежедневно доставляем утром к вашим дверям.</p>
+                        <p class="bowl__text">Наш сервис помогает экономить время, поддерживать стройность, работоспособность и укреплять здоровье.</p>
+                    </div>
+                </div>
+                <div class="bowl__photos">
+                    <img class="bowl__photos-img" src="/project-food/project-food/main-about/food-photo.png" alt="">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="delivery" id="delivery-id">
+            <div class="container">
+                <div class="delivery__inner">
+                    <div class="delivery__about">
+                        <h2 class="delivery__title">Карта доставки</h2>
+                        <p class="delivery__text">Доставка осуществляется каждый день с 06:00 до 12:00. Выбор интервала — 2 часа.</p>
+                        <img class="delivery__map" src="/project-food/project-food/main-about/map.png" alt="">
+                    </div>
+                    <div class="delivery__items">
+                        <div class="delivery__item delivery__green">
+                            <p class="delivery__item-inf">По городу бесплатно</p>
+                        </div>
+                        <div class="delivery__item delivery__blue">
+                            <p class="delivery__item-inf">Пригород 25 км — 100 ₽</p>
+                        </div>
+                        <div class="delivery__item delivery__orange">
+                           <p class="delivery__item-inf">Пригород 35 км — 300 ₽</p>
+                        </div>
+                        <div class="delivery__item delivery__red">
+                            <p class="delivery__item-inf">Пригород 50 км — 500 ₽</p>
+                        </div>
+                        <p class="delivery__correction">Уточните стоимость и время доставки</p>
+                        <p class="delivery__tel">+7 988 500-1-700</p>
+                        <p class="delivery__time">c 09:00 до 21:00</p>
+                      <button class="delivery__button open-modal-btn-tel">Перезвоните мне</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq-id">
+            <div class="container">
+                <h2 class="faq__title">
+                    Частые вопросы
+                </h2>
+                <div class="faq__buttons" id="faq">
+                    <button class="faq__btn faq-active faq-btn-js " id="faq__products">Продукты</button>
+                    <button class="faq__btn faq-active faq-btn-js" id="faq__programs">Программы</button>
+                    <button class="faq__btn faq-active faq-btn-js" id="faq__delivery">Оплата и доставка</button>
+                    
+                </div>
+                <div class="all__items">
+                <div class="faq__items faq__items-js faq-hide3 hide">
+                    <div class="faq__inner faq__item js-faq faq__inner-th">
+                        <div class="faq__header js-faq-trigger">
+                            <div class="faq__icon">
+                                <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                                <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                            </div>
+                            <div class="faq__title">Как я могу оплатить заказ?</div>
+                        </div>
+                        <div class="faq__text">Каждый вечер, в день доставки, с вами связывается курьер, ориентировочно с 19:00 до 20:00 для уточнения адреса и времени доставки. При необходимости, вы можете их изменить, сообщив об этом курьеру при звонке.</div>
+                    </div>
+                    <div class="faq__inner faq__item js-faq faq__inner-th">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я изменить адрес и время доставки?</div>
+                        </div>
+                        <div class="faq__text">Каждый вечер, в день доставки, с вами связывается курьер, ориентировочно с 19:00 до 20:00 для уточнения адреса и времени доставки. При необходимости, вы можете их изменить, сообщив об этом курьеру при звонке.</div>
+                      </div>
+                      <div class="faq__inner faq__item js-faq faq__inner-th">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я перенести день доставки?</div>
+                        </div>
+                        <div class="faq__text">Оплата осуществляется через ссылку, полученную от менеджера посредством сообщения в мессенджере, sms или электронной почте (по согласованию). По ссылке вы перейдете на страницу оплаты заказа. Услуга оплаты по картам в Интернете предоставляется РФИ Банком.</div>
+                      </div>
+                      <div class="faq__inner faq__item js-faq faq__inner-th">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я приостановить доставку, на какой срок?</div>
+                        </div>
+                        <div class="faq__text">Оплата осуществляется через ссылку, полученную от менеджера посредством сообщения в мессенджере, sms или электронной почте (по согласованию). По ссылке вы перейдете на страницу оплаты заказа. Услуга оплаты по картам в Интернете предоставляется РФИ Банком.</div>
+                      </div>
+                </div>
+
+                <div class="faq__items faq-hide2 hide">
+                    <div class="faq__inner faq__item js-faq faq__inner-tw">
+                        <div class="faq__header js-faq-trigger">
+                            <div class="faq__icon">
+                                <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                                <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                            </div>
+                            <div class="faq__title">Как я могу оплатить заказ?</div>
+                        </div>
+                        <div class="faq__text">Каждый вечер, в день доставки, с вами связывается курьер, ориентировочно с 19:00 до 20:00 для уточнения адреса и времени доставки. При необходимости, вы можете их изменить, сообщив об этом курьеру при звонке.</div>
+                    </div>
+                    <div class="faq__inner faq__item js-faq faq__inner-tw">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я изменить адрес и время доставки?</div>
+                        </div>
+                        <div class="faq__text">Каждый вечер, в день доставки, с вами связывается курьер, ориентировочно с 19:00 до 20:00 для уточнения адреса и времени доставки. При необходимости, вы можете их изменить, сообщив об этом курьеру при звонке.</div>
+                      </div>
+                      <div class="faq__inner faq__item js-faq faq__inner-tw">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я перенести день доставки?</div>
+                        </div>
+                        <div class="faq__text">Оплата осуществляется через ссылку, полученную от менеджера посредством сообщения в мессенджере, sms или электронной почте (по согласованию). По ссылке вы перейдете на страницу оплаты заказа. Услуга оплаты по картам в Интернете предоставляется РФИ Банком.</div>
+                      </div> 
+                </div>
+                <div class="faq__items faq-hide hide">
+                    <div class="faq__inner faq__item js-faq faq__inner-f">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я изменить адрес и время доставки?</div>
+                        </div>
+                        <div class="faq__text">Каждый вечер, в день доставки, с вами связывается курьер, ориентировочно с 19:00 до 20:00 для уточнения адреса и времени доставки. При необходимости, вы можете их изменить, сообщив об этом курьеру при звонке.</div>
+                      </div>
+                      <div class="faq__inner faq__item js-faq faq__inner-f">
+                        <div class="faq__header js-faq-trigger"> 
+                          <div class="faq__icon">
+                            <img class="faq__icon-minus" src="/project-food/project-food/main-about/arrowUp.svg" alt="">
+                            <img class="faq__icon-plus" src="/project-food/project-food/main-about/arrowDown.svg" alt="">
+                           </div>
+                          <div class="faq__title">Могу ли я перенести день доставки?</div>
+                        </div>
+                        <div class="faq__text">Оплата осуществляется через ссылку, полученную от менеджера посредством сообщения в мессенджере, sms или электронной почте (по согласованию). По ссылке вы перейдете на страницу оплаты заказа. Услуга оплаты по картам в Интернете предоставляется РФИ Банком.</div>
+                      </div>  
+                </div>
+            </div>
+                
+            </div>
+        </section>
+
+        <section class="consulting" id="consulting-id">
+            <div class="container">
+                <div class="consulting__inf">
+                    <div class="consulting__inner">
+                        <div class="consulting__title">
+                            Бесплатная консультация диетолога
+                        </div>
+                        <label class="consulting__label" for="name">
+                            <input class="consulting__input" id="name" type="text" placeholder="Ваше имя">
+                        </label>
+                        <label class="consulting__label">
+                            <input class="consulting__input tel" id="tel" type="tel" placeholder="Телефон">
+                        </label>
+                        <button class="consulting__btn open-modal-btn-check">Отправить заявку</button>
+                    </div>
+                    <img class="consulting__img" src="/project-food/project-food/main-about/tel.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews-id">
+            <div class="container">
+                <h2 class="reviews__title">
+                    Отзывы
+                </h2>
+                <div class="reviews__photos">
+                    <img class="reviews__photo" src="/project-food/project-food/main-about/reviews1.png" alt="">
+                    <img class="reviews__photo" src="/project-food/project-food/main-about/reviews2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="test" id="test-id">
+            <div class="container">
+                <h2 class="test__title">
+                    Пробный рацион
+                </h2>
+                <div class="test__texts">
+                    <p class="test__text">Сомневаетесь? Протестируйте наш сервис и еду.</p>
+                    <p class="test__text">Начните с пробного меню на два дня со скидкой 20% за 2 800 ₽ (1 200 ккал)</p>
+                </div>
+                <button class="test__btn open-modal-btn-two">Попробовать</button>
+            </div>
+        </section>
+
+        <section class="email" id="email-id">
+            <div class="container">
+                <div class="email__inside">
+                <div class="email__inner">
+                    <div class="email__title">
+                        Будьте всегда в курсе!
+                    </div>
+                    <div class="email__items">
+                        <img class="email__items-img" src="/project-food/project-food/main-about/email.svg" alt="">
+                        <p class="email__items-text">Подпишитесь на рассылку и будьте всегда в курсе новинок, акций и новостей!</p>
+                    </div>
+                </div>
+                <div class="email__btns">
+                    <label class="email__btns-label" for="email">
+                        <input class="email__btns-inp" id="email" type="email" placeholder="Укажите вашу почту">
+                    </label>
+                    <button class="email__btn open-modal-btn-subscribe">Подписаться</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer class="footer" >
+            <div class="container">
+                <div class="footer__top">
+                    <p class="footer__top-tel">+7 988 500-1-700</p>
+                    <p class="footer__email">hello@pora-poest.com</p>
+                    <div class="footer__top-socials">
+                    <div class="footer__top-social">
+                        <img class="footer__top-social-img" src="/project-food/project-food/main-about/tg-icon.png" alt="">
+                    </div>
+                    <div class="footer__top-social">
+                        <img class="footer__top-social-img" src="/project-food/project-food/main-about/vk-icon.png" alt="">
+                    </div>
+                    <div class="footer__top-social">
+                        <img class="footer__top-social-img" src="/project-food/project-food/main-footer/icon-inst.svg" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="footer__inner">
+                    <p class="footer__inner-text">ООО «ПораПоесть», г. Краснодар, ул. Кубанская Набережная улица, дом 5, офис 4</p>
+                    <div class="footer__inner-pay">
+                        <img class="footer__inner-pay-img" src="/project-food/project-food/main-footer/img1.png" alt="">
+                        <img class="footer__inner-pay-img" src="/project-food/project-food/main-footer/img2.png" alt="">
+                        <img class="footer__inner-pay-img" src="/project-food/project-food/main-footer/img3.png" alt="">
+                        <img class="footer__inner-pay-img" src="/project-food/project-food/main-footer/img4.png" alt="">
+                        <img class="footer__inner-pay-img" src="/project-food/project-food/main-footer/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="/project-food/main.js"></script>
+</body>
+</html>
