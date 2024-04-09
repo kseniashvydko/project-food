@@ -337,7 +337,7 @@ a {
   width: 130px;
   height: 48px;
   border-radius: 40px;
-  border: 3px solid #a98c64;
+  border: 2px solid #a98c64;
   background-color: #faf6f2;
   font-weight: 500;
   font-size: 16px;
@@ -365,7 +365,7 @@ input::-webkit-inner-spin-button {
   height: 48px;
   border-radius: 40px;
   padding: 0 10px;
-  border: 3px solid #a98c64;
+  border: 2px solid #a98c64;
   background-color: #faf6f2;
 }
 input {
@@ -383,7 +383,7 @@ input {
 .description__form-res-btn {
   width: 182px;
   height: 48px;
-  border: 3px solid #a98c64;
+  border: 2px solid #a98c64;
   background-color: #faf6f2;
   border-radius: 40px;
   text-align: center;
@@ -402,7 +402,7 @@ input {
   height: 48px;
   border: none;
   border-radius: 30px;
-  border: 3px solid #a98c64;
+  border: 2px solid #a98c64;
   background-color: #faf6f2;
   padding: 0 10px;
   font-size: 16px;
@@ -458,7 +458,7 @@ input {
 .program__calorie-item {
   width: 235px;
   height: 96px;
-  border: 1px solid #dfccb7;
+  border: 2px solid #dfccb7;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -495,7 +495,7 @@ input {
 .program__period-item {
   width: 235px;
   height: 96px;
-  border: 1px solid #dfccb7;
+  border: 2px solid #dfccb7;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -526,7 +526,7 @@ input {
   padding: 20px;
 }
 .program__days-btn {
-  border: 1px solid #dfccb7;
+  border: 2px solid #dfccb7;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -560,7 +560,7 @@ input {
   justify-content: space-around;
 }
 .example__btn {
-  border: 1px solid #dfccb7;
+  border: 2px solid #dfccb7;
   background-color: #faf6f2;
   width: 175px;
   height: 48px;
@@ -839,7 +839,7 @@ input {
   border-radius: 40px;
   width: 1000px;
   padding: 20px;
-  border: 3px solid #a98c64;
+  border: 3px solid #dfccb7;
 }
 .faq__icon {
   display: flex;
@@ -888,24 +888,24 @@ input {
 }
 
 .faq-hide3 {
-  position: absolute; /* 2 */
-  top: 0%; /* 3 */
+  position: absolute; 
+  top: 0%; 
   transform: translate(20%, 0%);
 }
 .faq__inner-th {
   margin: 10px;
 }
 .faq-hide2 {
-  position: absolute; /* 2 */
-  top: 0%; /* 3 */
+  position: absolute; 
+  top: 0%; 
   transform: translate(20%, 0%);
 }
 .faq__inner-tw {
   margin: 10px;
 }
 .faq-hide {
-  position: absolute; /* 2 */
-  top: 0%; /* 3 */
+  position: absolute; 
+  top: 0%; 
   transform: translate(20%, 0%);
   gap: 10px;
 }
